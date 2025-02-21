@@ -335,6 +335,7 @@ class Results(SimpleClass):
             self.obb = OBB(obb, self.orig_shape)
         if keypoints is not None:
             self.keypoints = Keypoints(keypoints, self.orig_shape)
+            # print(f"Keypoints found: {keypoints}")
 
     def _apply(self, fn, *args, **kwargs):
         """
